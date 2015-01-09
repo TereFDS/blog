@@ -47,6 +47,8 @@ gem 'sidekiq'
 
 gem 'pundit'
 
+gem
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -67,4 +69,6 @@ group :development, :test do
   gem 'spring'
 
   gem 'rspec-rails'
+
+  gem 'codeclimate-test-reporter', group: :test, require: nil
 end
