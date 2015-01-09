@@ -1,0 +1,23 @@
+= form_for @article, :html => { :class => "form-horizontal article" } do |f|
+  - if @article.errors.any?
+    #error_expl.panel.panel-danger
+      .panel-heading
+        h3.panel-title
+          = pluralize(@article.errors.count, "error")
+          | prohibited this article from being saved:
+      .panel-body
+        ul
+          - @article.errors.full_messages.each do |msg|
+            li= msg
+  .control-group
+    = f.label :title, :class => 'control-label'
+    .controls
+      = f.text_field :title, :class => 'form-control'
+    = error_span(@article[:title])
+  .control-group
+    = f.label :text, :class => 'control-label'
+    .controls
+      = f.text_field :text, :class => 'form-control'
+    = error_span(@article[:text])
+  = f.submit nil, :class => 'btn btn-primary'
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), articles_path, :class => 'btn btn-default'

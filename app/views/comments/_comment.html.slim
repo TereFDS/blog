@@ -1,0 +1,13 @@
+p
+  strong =t('comment.commenter')
+  - if comment.user
+  	 =comment.user.email
+  - else
+     text =t('user.anonymous')
+p
+  strong =t('comment.singular')
+  = comment.body
+
+- if policy(comment).destroy?
+   p
+       = link_to( t('comment.destroy'), [comment.article, comment], method: :delete,:class => 'btn btn-default')

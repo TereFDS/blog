@@ -1,0 +1,8 @@
+h1 =t('hello')
+= render 'layouts/header'
+.nav_bar
+  c
+    p = link_to t('my_blog'), controller: 'articles'
+    p = link_to t('new_article'), new_article_path
+    p = link_to t('user.sign_up'), new_user_registration_path
+    p = link_to t('user.sign_in'), new_user_session_path

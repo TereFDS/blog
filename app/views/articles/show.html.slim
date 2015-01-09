@@ -1,0 +1,40 @@
+- model_class = Article
+.page-header
+  h1= t '.title', :default => model_class.model_name.human.titleize
+dl.dl-horizontal
+  dt
+    strong
+      = model_class.human_attribute_name(:title)
+      | :
+  dd= @article.title
+  dt
+    strong
+      = model_class.human_attribute_name(:text)
+      | :
+  dd= @article.text
+  dt
+    strong
+      = model_class.human_attribute_name(:user_id)
+      | :
+    - if @article.user
+      dd= @article.user.email
+    - else
+      dd =t('user.anonymous')
+
+
+  h2 =t('comment.plural')
+  - if @article.comments.size == 0
+      p =t('comment.none')
+
+  = render @article.comments
+
+  - if user_signed_in?
+    h2 Add a comment:
+    = render 'comments/form'
+
+= link_to t('.back', :default => t("helpers.links.back")), articles_path, :class => 'btn btn-default'
+- if policy(@article).edit?
+  = link_to t('.edit', :default => t("helpers.links.edit")), edit_article_path(@article), :class => 'btn btn-default'
+
+- if policy(@article).destroy?
+  = link_to t('.destroy', :default => t("helpers.links.destroy")), article_path(@article),  method: :delete, :class => 'btn btn-default'

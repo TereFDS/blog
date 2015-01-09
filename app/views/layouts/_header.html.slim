@@ -1,0 +1,9 @@
+ - if user_signed_in?
+    p User: #{current_user.email}
+    = link_to t('login.sign_out'), destroy_user_session_path(user_session), method: :delete
+    = link_to t(:edit_user), edit_user_registration_path
+ - else
+    p =t('user.anonymus')
+    = link_to t('login.sign_in'), new_user_session_path
+
+
