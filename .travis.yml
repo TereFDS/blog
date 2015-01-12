@@ -19,8 +19,8 @@ services:
 before_script:
   - cp config/database.travis.yml config/database.yml
   - psql -c "CREATE USER blog WITH PASSWORD 'blog123';" -U postgres
-  - psql -c "DROP DATABASE IF EXISTS blog_development;" -U postgres
-  - psql -c "CREATE DATABASE blog_development ENCODING 'utf8';" -U postgres
+  - psql -c "DROP DATABASE IF EXISTS blog_test;" -U postgres
+  - psql -c "CREATE DATABASE blog_test ENCODING 'utf8';" -U postgres
   - bundle exec rake db:migrate test:prepare
 
 script:

@@ -69,5 +69,7 @@ group :development, :test do
 
   gem 'rspec-rails'
 
+  gem 'shoulda-matchers'
+
   gem 'codeclimate-test-reporter', group: :test, require: nil
 end

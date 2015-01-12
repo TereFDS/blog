@@ -25810,3 +25810,1487 @@ Pundit::NotAuthorizedError (not allowed to edit? this #<Article:0x007fcfacbb11f0
   Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.5ms)
   Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.5ms)
   Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (20.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (31.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'active_admin_comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'admin_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'articles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 10:15:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (36.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.slim (77.0ms)
+  Rendered welcome/index.html.slim within layouts/application (103.2ms)
+Completed 200 OK in 2357ms (Views: 2290.7ms | ActiveRecord: 38.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 10:15:15 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.slim (6.2ms)
+  Rendered welcome/index.html.slim within layouts/application (9.1ms)
+Completed 200 OK in 510ms (Views: 508.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:16 -0300
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-01-12 10:15:20 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Al1/zzglv9kykr9+tzqjVd886wdhZws3jBZ9sNCH90qJxo1qFCeG3TxU9tc0vMi+SjKAlzksRLYnWj8RPs9n0w=="}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 85ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+Processing by WelcomeController#index as HTML
+  Rendered layouts/_header.html.slim (5.5ms)
+  Rendered welcome/index.html.slim within layouts/application (7.3ms)
+Completed 200 OK in 448ms (Views: 446.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:21 -0300
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:15:23 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (163.5ms)
+Completed 200 OK in 606ms (Views: 600.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/articles/8" for 127.0.0.1 at 2015-01-12 10:15:29 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 8]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.slim within layouts/application (13.9ms)
+Completed 200 OK in 425ms (Views: 422.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:15:33 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (10.5ms)
+Completed 200 OK in 437ms (Views: 435.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-01-12 10:15:35 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 1]]
+  Rendered comments/_comment.html.slim (75.9ms)
+  Rendered articles/show.html.slim within layouts/application (128.1ms)
+Completed 200 OK in 576ms (Views: 573.8ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/articles/1/comments/2" for 127.0.0.1 at 2015-01-12 10:15:41 -0300
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aQk9NvNX5GeIpyPuDffQRr9V+w0vLngJHRKfOYbvVltj3pMxImWwIT5USdCfaJHYlwiQ+3S8czKg6ahIV5oqcQ==", "article_id"=>"1", "id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.6ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2 LIMIT 1  [["article_id", 1], ["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "comments" WHERE "comments"."id" = $1  [["id", 2]]
+  [1m[36m (16.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 25ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-01-12 10:15:41 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 1]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.slim within layouts/application (7.6ms)
+Completed 200 OK in 518ms (Views: 516.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:42 -0300
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:15:44 -0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (11.1ms)
+Completed 200 OK in 463ms (Views: 461.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2015-01-12 10:15:46 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 2]]
+  Rendered comments/_comment.html.slim (1.0ms)
+  Rendered articles/show.html.slim within layouts/application (4.7ms)
+Completed 200 OK in 415ms (Views: 413.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/articles/2/comments/3" for 127.0.0.1 at 2015-01-12 10:15:48 -0300
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fL9rVDW79/ywiu5qr6UJysJyCXyix1bTk100kW4OL9Z2aMVT5ImjugZ5hFQ9OkhU6i9iivlVXegupgPgv3tT/A==", "article_id"=>"2", "id"=>"3"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT  "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2 LIMIT 1[0m  [["article_id", 2], ["id", 3]]
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 3]]
+  [1m[35m (52.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 62ms (ActiveRecord: 54.4ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2015-01-12 10:15:48 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 2]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.slim within layouts/application (2.8ms)
+Completed 200 OK in 509ms (Views: 507.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:15:49 -0300
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:15:51 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (10.7ms)
+Completed 200 OK in 425ms (Views: 423.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-01-12 10:15:53 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 1]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.slim within layouts/application (2.8ms)
+Completed 200 OK in 421ms (Views: 419.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:15:55 -0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (10.2ms)
+Completed 200 OK in 482ms (Views: 480.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2015-01-12 10:15:56 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 2]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.slim within layouts/application (5.2ms)
+Completed 200 OK in 452ms (Views: 450.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:15:58 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (11.8ms)
+Completed 200 OK in 376ms (Views: 374.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2015-01-12 10:16:00 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 5]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.slim within layouts/application (60.4ms)
+Completed 200 OK in 424ms (Views: 422.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:16:02 -0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (11.2ms)
+Completed 200 OK in 487ms (Views: 486.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2015-01-12 10:16:03 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_comment.html.slim (0.9ms)
+  Rendered articles/show.html.slim within layouts/application (4.8ms)
+Completed 200 OK in 447ms (Views: 445.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:16:04 -0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (10.8ms)
+Completed 200 OK in 457ms (Views: 456.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/8" for 127.0.0.1 at 2015-01-12 10:16:06 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 8]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.slim within layouts/application (3.9ms)
+Completed 200 OK in 427ms (Views: 425.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:16:07 -0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (12.5ms)
+Completed 200 OK in 393ms (Views: 391.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2015-01-12 10:16:08 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 9]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.slim within layouts/application (6.0ms)
+Completed 200 OK in 437ms (Views: 436.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:16:09 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (12.3ms)
+Completed 200 OK in 491ms (Views: 488.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/10" for 127.0.0.1 at 2015-01-12 10:16:11 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 10]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.slim within layouts/application (2.9ms)
+Completed 200 OK in 433ms (Views: 431.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:16:12 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (12.0ms)
+Completed 200 OK in 461ms (Views: 459.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2015-01-12 10:16:13 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 6]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered comments/_comment.html.slim (0.7ms)
+  Rendered articles/show.html.slim within layouts/application (4.6ms)
+Completed 200 OK in 435ms (Views: 433.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:16:15 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (12.2ms)
+Completed 200 OK in 370ms (Views: 368.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 10:17:31 -0300
+Processing by WelcomeController#index as HTML
+  Rendered layouts/_header.html.slim (1.1ms)
+  Rendered welcome/index.html.slim within layouts/application (84.0ms)
+Completed 200 OK in 516ms (Views: 515.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:32 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-01-12 10:17:35 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (5.3ms)
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 546ms (Views: 504.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-01-12 10:17:43 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IO/GteaiRgMcv13I1fvuOcmvITC/own7VcfDfxrGLfcqOGiyN5ASRapMN/ZHZK+n4fJKxuQxAsDoPPQOy7NR3Q==", "user"=>{"email"=>"tere.fds@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (27.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "tere.fds@hotmail.com"]]
+Completed 401 Unauthorized in 106ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IO/GteaiRgMcv13I1fvuOcmvITC/own7VcfDfxrGLfcqOGiyN5ASRapMN/ZHZK+n4fJKxuQxAsDoPPQOy7NR3Q==", "user"=>{"email"=>"tere.fds@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 575ms (Views: 518.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:44 -0300
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-01-12 10:17:51 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JgDv67hw8spYdEYy0xL3Cp9SFfURzZjmGJA4jWQ7M44s10HsaUKmjO6HLAxBjbaUtw9+A0pfk92law/8tU5PpA==", "user"=>{"email"=>"tere.fds@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "tere.fds@hotmail.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2015-01-09 13:21:33.378768"], ["current_sign_in_at", "2015-01-12 13:17:51.287043"], ["sign_in_count", 8], ["updated_at", "2015-01-12 13:17:51.288360"], ["id", 1]]
+  [1m[35m (38.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 148ms (ActiveRecord: 39.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 10:17:51 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.slim (1.6ms)
+  Rendered welcome/index.html.slim within layouts/application (3.6ms)
+Completed 200 OK in 513ms (Views: 511.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:51 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:51 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:51 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:51 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:51 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:51 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:17:51 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:51 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:17:52 -0300
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:17:56 -0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (15.5ms)
+Completed 200 OK in 494ms (Views: 491.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2015-01-12 10:17:58 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_comment.html.slim (1.4ms)
+  Rendered comments/_form.html.slim (5.7ms)
+  Rendered articles/show.html.slim within layouts/application (31.1ms)
+Completed 200 OK in 391ms (Views: 389.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/articles/7/comments" for 127.0.0.1 at 2015-01-12 10:18:05 -0300
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qB9saY8GerwtcUXOI4NtebZCvLerW+jCRG9PxoGq6aTzrTKOUfwd2DHfb0ee1M+TqGk3XQTi1OFoO1m2Z5cRLQ==", "comment"=>{"body"=>"jojojo"}, "commit"=>"Create Comment", "article_id"=>"7"}
+  [1m[35mArticle Load (1.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (86.3ms)[0m  [1mINSERT INTO "comments" ("body", "user_id", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "jojojo"], ["user_id", 1], ["article_id", 7], ["created_at", "2015-01-12 13:18:05.936946"], ["updated_at", "2015-01-12 13:18:05.936946"]]
+  [1m[35m (45.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/7
+Completed 302 Found in 149ms (ActiveRecord: 133.8ms)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_comment.html.slim (5.3ms)
+  Rendered comments/_form.html.slim (4.9ms)
+  Rendered articles/show.html.slim within layouts/application (17.5ms)
+Completed 200 OK in 528ms (Views: 525.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:18:06 -0300
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:18:09 -0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (11.1ms)
+Completed 200 OK in 427ms (Views: 426.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2015-01-12 10:18:13 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 9]]
+  Rendered collection (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.slim (1.4ms)
+  Rendered articles/show.html.slim within layouts/application (5.1ms)
+Completed 200 OK in 364ms (Views: 362.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:18:20 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (12.1ms)
+Completed 200 OK in 371ms (Views: 369.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-01-12 10:24:50 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1  [["article_id", 1]]
+  Rendered collection (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_form.html.slim (59.4ms)
+  Rendered articles/show.html.slim within layouts/application (67.2ms)
+Completed 200 OK in 431ms (Views: 429.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:24:52 -0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (11.0ms)
+Completed 200 OK in 434ms (Views: 432.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 10:24:58 -0300
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.slim (1.9ms)
+  Rendered welcome/index.html.slim within layouts/application (4.4ms)
+Completed 200 OK in 512ms (Views: 510.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:24:59 -0300
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-01-12 10:25:01 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+gCFk6XhAo5YsGs7P2uSBwNlnrRHmjgK1qFE3SCHIQmhstt0extl6kQeQbKCPDDtHU4VXugjBCn69VKtxrrZgA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 10:25:01 -0300
+Processing by WelcomeController#index as HTML
+  Rendered layouts/_header.html.slim (0.5ms)
+  Rendered welcome/index.html.slim within layouts/application (77.3ms)
+Completed 200 OK in 517ms (Views: 516.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:01 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:01 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:01 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:01 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:01 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:01 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:02 -0300
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 10:25:03 -0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (12.5ms)
+Completed 200 OK in 456ms (Views: 453.9ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/articles/1" for 127.0.0.1 at 2015-01-12 10:25:04 -0300
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"n2N4/r9r9laRohzrf+RnfSVE2LB6X/SzugASkcuaLumXw7dwrrAVxLqrz32k8zHuEwWaONxprY6XL69pPyZXhQ==", "id"=>"1"}
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-01-12 10:25:04 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 546ms (Views: 545.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 10:25:05 -0300

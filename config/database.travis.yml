@@ -1,7 +1,7 @@
 test: &test
   adapter: postgresql
   encoding: utf8
-  database: blog_development
+  database: blog_test
   username: postgres
 
 cucumber:
