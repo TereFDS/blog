@@ -3,11 +3,17 @@ require "rails_helper"
 RSpec.describe Comment, :type => :model do
   before do
     @user = User.new
-    @comment = Comment.new
   end
   it { should validate_presence_of :body  }
   it { should validate_presence_of :user }
   it { should validate_presence_of :article }
+
+   it "orders them in reverse chronologically" do
+      article = Article.create!
+      comment1 = article.comments.create!(body: "first comment")
+      comment2 = article.comments.create!(body: "second comment")
+      expect(article.reload.comments).to eq([comment2, comment1])
+    end
 
   #it "checks empty fields" do
   #  user = User.create!(email: "user@name.com", password: 'password', password_confirmation: 'password')
