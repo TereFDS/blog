@@ -1,10 +1,37 @@
 language: ruby
 rvm:
-  - "1.8.7"
-  - "1.9.2"
-  - "1.9.3"
-  - jruby-18mode # JRuby in 1.8 mode
-  - jruby-19mode # JRuby in 1.9 mode
-  - rbx
-# uncomment this line if your project needs to run something other than `rake`:
-# script: bundle exec rspec spec
+  - 2.1.5
+
+addons:
+  code_climate:
+    repo_token: 985bd5fb35313d855f5f4ecdd67c131dfe1d0809336efac17b56bbd30e7020b0
+
+env:
+  global:
+    - RUBY_GC_MALLOC_LIMIT=90000000
+    - RUBY_GC_HEAP_FREE_SLOTS=200000
+    - SECURITY_SECRET_TOKEN=traviscitraviscitraviscitraviscitravisci
+
+services:
+  - postgresql
+  - redis-server
+
+before_script:
+  - cp config/database.travis.yml config/database.yml
+  - psql -c "CREATE USER blog WITH PASSWORD 'blog123';" -U postgres
+  - psql -c "DROP DATABASE IF EXISTS blog_development;" -U postgres
+  - psql -c "CREATE DATABASE blog_development ENCODING 'utf8';" -U postgres
+  - bundle exec rake db:migrate test:prepare
+
+script:
+  - bundle exec rspec
+  - bundle exec cucumber
+  - bundle exec rubocop app spec features -R --format simple
+
+notifications:
+  email:
+    recipients:
+      - teresa.fontanella@wolox.com.ar
+
+cache:
+  bundler: true
