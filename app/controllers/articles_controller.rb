@@ -14,23 +14,21 @@ class ArticlesController < ApplicationController
 
   def edit
     @article = Article.find(params[:id])
-    if authorize @article
-      #if @article.user != current_user
-        #redirect_to articles_path
-      #end
-    else
-      redirect_to new_user_session_path
-    end
+    authorize @article
+    # if @article.user != current_user
+    # redirect_to articles_path
+    # end
+    redirect_to new_user_session_path
   end
 
   def create
-  	if user_signed_in?
-	    @article = Article.new(article_params.merge(user: current_user))
-	    if @article.save
-	      redirect_to @article
-	    else
-	      render 'new'
-	    end
+    if user_signed_in?
+      @article = Article.new(article_params.merge(user: current_user))
+      if @article.save
+        redirect_to @article
+      else
+        render 'new'
+      end
     end
   end
 
@@ -57,22 +55,22 @@ class ArticlesController < ApplicationController
 
   def last_articles_bymail
 
-  	# Agarrar ulimos articles
-  	# enviar email con esos articles
-  	# responder status: 200
+    # Agarrar ulimos articles
+    # enviar email con esos articles
+    # responder status: 200
 
-  	#el pluck espara obtener un atributo en particular
-    articles=Article.last_created(params[:count]).pluck(:id)
+    # el pluck espara obtener un atributo en particular
+    articles = Article.last_created(params[:count]).pluck(:id)
     if user_signed_in?
       # Tell the ArticleMailer to send the email
 
-      #el deliver_later es para hacerlo asincronico (mandar mail generalmente se hace asincronico)
-      #si queremos que sea sincronico, hay que usar .deliver!
+      # el deliver_later es para hacerlo asincronico (mandar mail generalmente se hace asincronico)
+      # si queremos que sea sincronico, hay que usar .deliver!
       ArticleMailer.last_created(current_user.email,articles).deliver_later
 
-      #otra forma podria ser esta: tener una coleccion de articles y aplicar map a un atributo
-      #(cualquiera de las dos formas son validas)
-      #ArticleMailer.last_created(current_user.email, articles.map(&:id)).deliver_later
+      # otra forma podria ser esta: tener una coleccion de articles y aplicar map a un atributo
+      # (cualquiera de las dos formas son validas)
+      # ArticleMailer.last_created(current_user.email, articles.map(&:id)).deliver_later
     end
     render nothing: true
 

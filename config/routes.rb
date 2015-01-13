@@ -16,6 +16,7 @@ Rails.application.routes.draw do
    root 'welcome#index'
    get'articles/last_created/:count' => 'articles#last_articles_bymail', as:'articles_last_created'
 
+  resource :inbox, :controller => 'inbox', :only => [:show,:create]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

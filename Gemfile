@@ -16,36 +16,41 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+# Turbolinks makes following links in your web application faster. Read more:
+# https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-#Slim Templates
+# Slim Templates
 gem 'slim'
 
-#Devise
+# Devise
 gem 'devise'
 gem 'devise-i18n'
 
-#I18n gem
+# I18n gem
 gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master'  # For 4.x
 
-#Rubocop lint gem
+# Rubocop lint gem
 gem 'rubocop'
 
-#Bootstrap gem
+# Bootstrap gem
 gem "twitter-bootstrap-rails"
 
-#activeadmin
+# activeadmin
 gem 'activeadmin', github: 'activeadmin', branch: 'rails-4-2'
 gem 'inherited_resources', github: 'josevalim/inherited_resources', branch: 'rails-4-2'
 
 gem 'sidekiq'
 
 gem 'pundit'
+
+gem 'mandrill-rails'
+
+gem 'app_configuration'
 
 
 # Use ActiveModel has_secure_password
@@ -64,7 +69,8 @@ group :development, :test do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  # Spring speeds up development by keeping your application running in the background. Read more:
+  # https://github.com/rails/spring
   gem 'spring'
 
   gem 'rspec-rails'

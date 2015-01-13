@@ -27380,3 +27380,1093 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 12:54:19 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered layouts/_header.html.slim (7.8ms)
+  Rendered welcome/index.html.slim within layouts/application (19.3ms)
+Completed 200 OK in 897ms (Views: 884.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:54:20 -0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-01-12 12:54:24 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (2.5ms)
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/registrations/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 505ms (Views: 494.7ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"diEu70KYD0QCMipKxh0kMLgZ9+VVe+Cf/tp7aA/cd19+geFhU0Ps1ik7+dwdCnKjjli1bfNNuaLT9caQ+2AOMw==", "user"=>{"email"=>"teresa.fontanella@wolox.com.ar", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'teresa.fontanella@wolox.com.ar' LIMIT 1[0m
+  [1m[35mSQL (50.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["email", "teresa.fontanella@wolox.com.ar"], ["encrypted_password", "$2a$10$HYzOjE1EFXkobT7Wk.Unv.xWn9/3aCj9gWAMmui8pQ6b4KVwXVQs6"], ["created_at", "2015-01-12 15:55:07.211799"], ["updated_at", "2015-01-12 15:55:07.211799"]]
+  [1m[36m (36.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["last_sign_in_at", "2015-01-12 15:55:07.302240"], ["current_sign_in_at", "2015-01-12 15:55:07.302240"], ["last_sign_in_ip", "127.0.0.1/32"], ["current_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-01-12 15:55:07.303170"], ["id", 3]]
+  [1m[35m (9.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 215ms (ActiveRecord: 97.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_header.html.slim (2.0ms)
+  Rendered welcome/index.html.slim within layouts/application (3.6ms)
+Completed 200 OK in 508ms (Views: 506.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/jquery-ui/datepicker-46fef2bd08c7152eabb139e0fce7b289.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/jquery-ui/draggable-9250c452292e1bd4057d39344ed9f6f2.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:07 -0300
+
+
+Started GET "/assets/jquery-ui/resizable-4ceb16086b541dd8503b73ff1ebe634a.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/jquery-ui/dialog-c1fa41ba5b29b08fcab3fe60e7172348.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/jquery-ui/sortable-fd3842e48545c56fbd507aee96bb367d.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/jquery-ui/tabs-77d5968531a2f0c3e331c2b690c87826.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler-f0fc7612f005a3d5a2cc8892039b9eed.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:08 -0300
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 12:55:12 -0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.6ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (97.9ms)
+Completed 200 OK in 456ms (Views: 450.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/articles/last_created/10" for 127.0.0.1 at 2015-01-12 12:55:14 -0300
+Processing by ArticlesController#last_articles_bymail as HTML
+  Parameters: {"count"=>"10"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36m (0.4ms)[0m  [1mSELECT  "articles"."id" FROM "articles"  ORDER BY "articles"."created_at" ASC LIMIT 10[0m
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 1ac49b2a-4ea6-49f0-a800-137ba3ba5894) to Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [1ac49b2a-4ea6-49f0-a800-137ba3ba5894] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [1ac49b2a-4ea6-49f0-a800-137ba3ba5894]   [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" IN (1, 2, 5, 6, 7, 8, 9, 10)
+[ActiveJob] [ActionMailer::DeliveryJob] [1ac49b2a-4ea6-49f0-a800-137ba3ba5894]   Rendered article_mailer/last_created.html.erb within layouts/mailer (0.4ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [1ac49b2a-4ea6-49f0-a800-137ba3ba5894] 
+ArticleMailer#last_created: processed outbound mail in 236.6ms
+[ActiveJob] [ActionMailer::DeliveryJob] [1ac49b2a-4ea6-49f0-a800-137ba3ba5894] 
+Sent mail to teresa.fontanella@wolox.com.ar (6.5ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [1ac49b2a-4ea6-49f0-a800-137ba3ba5894] Date: Mon, 12 Jan 2015 12:55:15 -0300
+From: notifications@example.com
+To: teresa.fontanella@wolox.com.ar
+Message-ID: <54b3ee6350b89_180d3fdb2e951750314dc@ignacio-To-be-filled-by-O-E-M.mail>
+Subject: Last Created Articles
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to example.com, teresa.fontanella@wolox.com.ar</h1>
+    <h1> Last  created articles</h1>
+    
+    <p>
+
+      You have successfully signed up to example.com,
+      your username is: teresa.fontanella@wolox.com.ar.<br>
+    </p>
+    <p>
+      To login to the site, just follow this link: http://example.com/login.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::DeliveryJob] [1ac49b2a-4ea6-49f0-a800-137ba3ba5894] Performed ActionMailer::DeliveryJob from Inline(mailers) in 244.15ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 371ms (Views: 4.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/last_created/10" for 127.0.0.1 at 2015-01-12 12:55:15 -0300
+Processing by ArticlesController#last_articles_bymail as HTML
+  Parameters: {"count"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  SELECT  "articles"."id" FROM "articles"  ORDER BY "articles"."created_at" ASC LIMIT 10
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: b2178ef7-6178-4237-9104-a3e4a76795bb) to Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [b2178ef7-6178-4237-9104-a3e4a76795bb] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [b2178ef7-6178-4237-9104-a3e4a76795bb]   [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" IN (1, 2, 5, 6, 7, 8, 9, 10)[0m
+[ActiveJob] [ActionMailer::DeliveryJob] [b2178ef7-6178-4237-9104-a3e4a76795bb]   Rendered article_mailer/last_created.html.erb within layouts/mailer (0.0ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [b2178ef7-6178-4237-9104-a3e4a76795bb] 
+ArticleMailer#last_created: processed outbound mail in 4.9ms
+[ActiveJob] [ActionMailer::DeliveryJob] [b2178ef7-6178-4237-9104-a3e4a76795bb] 
+Sent mail to teresa.fontanella@wolox.com.ar (1.9ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [b2178ef7-6178-4237-9104-a3e4a76795bb] Date: Mon, 12 Jan 2015 12:55:15 -0300
+From: notifications@example.com
+To: teresa.fontanella@wolox.com.ar
+Message-ID: <54b3ee635a024_180d3fdb2e95175031574@ignacio-To-be-filled-by-O-E-M.mail>
+Subject: Last Created Articles
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to example.com, teresa.fontanella@wolox.com.ar</h1>
+    <h1> Last  created articles</h1>
+    
+    <p>
+
+      You have successfully signed up to example.com,
+      your username is: teresa.fontanella@wolox.com.ar.<br>
+    </p>
+    <p>
+      To login to the site, just follow this link: http://example.com/login.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::DeliveryJob] [b2178ef7-6178-4237-9104-a3e4a76795bb] Performed ActionMailer::DeliveryJob from Inline(mailers) in 8.48ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 12:55:53 -0300
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered layouts/_header.html.slim (7.1ms)
+  Rendered welcome/index.html.slim within layouts/application (11.9ms)
+Completed 200 OK in 460ms (Views: 457.3ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-01-12 12:55:58 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eMIhs1BX1eeXpAip33dchUxottPTJGOKfZgA9YR9ylhwYu49QYw2dbyt2z8EYAoWein0W3USOrdQt70NcMGzNA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 12:55:58 -0300
+Processing by WelcomeController#index as HTML
+  Rendered layouts/_header.html.slim (0.3ms)
+  Rendered welcome/index.html.slim within layouts/application (2.0ms)
+Completed 200 OK in 509ms (Views: 507.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:55:59 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-01-12 12:56:01 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (2.9ms)
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 441ms (Views: 440.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-01-12 12:56:09 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A7iuMWE5UOLEVBzKvnYR0a7OGG6GiRLRn+kppN7JlyXf45DzZQVzAamQsy8fWSogPwZlmlbnOEXpdCmWU9V7yA==", "user"=>{"email"=>"tere.fds@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "tere.fds@hotmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2015-01-12 13:17:51.287043"], ["current_sign_in_at", "2015-01-12 15:56:09.988928"], ["sign_in_count", 9], ["updated_at", "2015-01-12 15:56:09.990161"], ["id", 1]]
+  [1m[36m (38.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 108ms (ActiveRecord: 39.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.slim (1.4ms)
+  Rendered welcome/index.html.slim within layouts/application (3.0ms)
+Completed 200 OK in 516ms (Views: 515.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-12 12:56:10 -0300
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-12 12:56:12 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (12.7ms)
+Completed 200 OK in 487ms (Views: 484.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles/last_created/10" for 127.0.0.1 at 2015-01-12 12:56:15 -0300
+Processing by ArticlesController#last_articles_bymail as HTML
+  Parameters: {"count"=>"10"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT  "articles"."id" FROM "articles"  ORDER BY "articles"."created_at" ASC LIMIT 10
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 3a8aded9-63d3-4453-8cf1-e696fc0a27f5) to Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "tere.fds@hotmail.com", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [3a8aded9-63d3-4453-8cf1-e696fc0a27f5] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "tere.fds@hotmail.com", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [3a8aded9-63d3-4453-8cf1-e696fc0a27f5]   [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" IN (1, 2, 5, 6, 7, 8, 9, 10)[0m
+[ActiveJob] [ActionMailer::DeliveryJob] [3a8aded9-63d3-4453-8cf1-e696fc0a27f5]   Rendered article_mailer/last_created.html.erb within layouts/mailer (0.1ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [3a8aded9-63d3-4453-8cf1-e696fc0a27f5] 
+ArticleMailer#last_created: processed outbound mail in 4.9ms
+[ActiveJob] [ActionMailer::DeliveryJob] [3a8aded9-63d3-4453-8cf1-e696fc0a27f5] 
+Sent mail to tere.fds@hotmail.com (1.9ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [3a8aded9-63d3-4453-8cf1-e696fc0a27f5] Date: Mon, 12 Jan 2015 12:56:15 -0300
+From: notifications@example.com
+To: tere.fds@hotmail.com
+Message-ID: <54b3ee9f98aaf_180d3fdb3e205cc0316c3@ignacio-To-be-filled-by-O-E-M.mail>
+Subject: Last Created Articles
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to example.com, tere.fds@hotmail.com</h1>
+    <h1> Last  created articles</h1>
+    
+    <p>
+
+      You have successfully signed up to example.com,
+      your username is: tere.fds@hotmail.com.<br>
+    </p>
+    <p>
+      To login to the site, just follow this link: http://example.com/login.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::DeliveryJob] [3a8aded9-63d3-4453-8cf1-e696fc0a27f5] Performed ActionMailer::DeliveryJob from Inline(mailers) in 7.87ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/last_created/10" for 127.0.0.1 at 2015-01-12 12:56:15 -0300
+Processing by ArticlesController#last_articles_bymail as HTML
+  Parameters: {"count"=>"10"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT  "articles"."id" FROM "articles"  ORDER BY "articles"."created_at" ASC LIMIT 10[0m
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 7cc6a195-198e-4746-8f7e-d3fcfccc272a) to Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "tere.fds@hotmail.com", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [7cc6a195-198e-4746-8f7e-d3fcfccc272a] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "tere.fds@hotmail.com", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [7cc6a195-198e-4746-8f7e-d3fcfccc272a]   [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" IN (1, 2, 5, 6, 7, 8, 9, 10)
+[ActiveJob] [ActionMailer::DeliveryJob] [7cc6a195-198e-4746-8f7e-d3fcfccc272a]   Rendered article_mailer/last_created.html.erb within layouts/mailer (0.0ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [7cc6a195-198e-4746-8f7e-d3fcfccc272a] 
+ArticleMailer#last_created: processed outbound mail in 4.9ms
+[ActiveJob] [ActionMailer::DeliveryJob] [7cc6a195-198e-4746-8f7e-d3fcfccc272a] 
+Sent mail to tere.fds@hotmail.com (81.2ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [7cc6a195-198e-4746-8f7e-d3fcfccc272a] Date: Mon, 12 Jan 2015 12:56:15 -0300
+From: notifications@example.com
+To: tere.fds@hotmail.com
+Message-ID: <54b3ee9f9ff29_180d3fdb3e205cc031781@ignacio-To-be-filled-by-O-E-M.mail>
+Subject: Last Created Articles
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to example.com, tere.fds@hotmail.com</h1>
+    <h1> Last  created articles</h1>
+    
+    <p>
+
+      You have successfully signed up to example.com,
+      your username is: tere.fds@hotmail.com.<br>
+    </p>
+    <p>
+      To login to the site, just follow this link: http://example.com/login.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::DeliveryJob] [7cc6a195-198e-4746-8f7e-d3fcfccc272a] Performed ActionMailer::DeliveryJob from Inline(mailers) in 87.68ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 100ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-13 09:00:49 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (49.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (26.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.slim (184.3ms)
+  Rendered welcome/index.html.slim within layouts/application (204.7ms)
+Completed 200 OK in 2448ms (Views: 2316.4ms | ActiveRecord: 99.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:00:52 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-13 09:06:13 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.slim (12.5ms)
+  Rendered welcome/index.html.slim within layouts/application (16.5ms)
+Completed 200 OK in 500ms (Views: 497.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:14 -0300
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bp74DaKAemMxrY6vo6mcTsrbUa2jVDlcqnd+N85/UePgvzRyAmtEZkIW65R+ywW94SxIRNAeBAPmYGaiezFq8Q=="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendered layouts/_header.html.slim (6.0ms)
+  Rendered welcome/index.html.slim within layouts/application (8.0ms)
+Completed 200 OK in 507ms (Views: 506.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:19 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-01-13 09:06:22 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (4.6ms)
+  Rendered /home/teresafontanella/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (60.2ms)
+Completed 200 OK in 563ms (Views: 543.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-01-13 09:06:35 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vMwA+8Ch4mkCpesmS7KLZyaFXWuETWQOtmpiWdHoz4PKL1vPHudKNYDB/g27quuPLh8PuEL5oiAxQzypaWaH2w==", "user"=>{"email"=>"teresa.fontanella@wolox.com.ar", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (27.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "teresa.fontanella@wolox.com.ar"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (13.9ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2015-01-13 12:06:35.803044"], ["sign_in_count", 2], ["updated_at", "2015-01-13 12:06:35.804491"], ["id", 3]]
+  [1m[35m (37.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 214ms (ActiveRecord: 78.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-13 09:06:35 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_header.html.slim (1.6ms)
+  Rendered welcome/index.html.slim within layouts/application (3.5ms)
+Completed 200 OK in 555ms (Views: 554.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:06:36 -0300
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-13 09:06:40 -0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (22.5ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (176.4ms)
+Completed 200 OK in 639ms (Views: 611.2ms | ActiveRecord: 24.5ms)
+
+
+Started GET "/articles/last_created/10" for 127.0.0.1 at 2015-01-13 09:06:42 -0300
+Processing by ArticlesController#last_articles_bymail as HTML
+  Parameters: {"count"=>"10"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36m (0.4ms)[0m  [1mSELECT  "articles"."id" FROM "articles"  ORDER BY "articles"."created_at" ASC LIMIT 10[0m
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: d929b9be-0b8a-4111-b1c7-772f3622ad50) to Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [d929b9be-0b8a-4111-b1c7-772f3622ad50] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [d929b9be-0b8a-4111-b1c7-772f3622ad50]   [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" IN (1, 2, 5, 6, 7, 8, 9, 10)
+[ActiveJob] [ActionMailer::DeliveryJob] [d929b9be-0b8a-4111-b1c7-772f3622ad50]   Rendered article_mailer/last_created.html.erb within layouts/mailer (0.4ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [d929b9be-0b8a-4111-b1c7-772f3622ad50] 
+ArticleMailer#last_created: processed outbound mail in 250.5ms
+[ActiveJob] [ActionMailer::DeliveryJob] [d929b9be-0b8a-4111-b1c7-772f3622ad50] 
+Sent mail to teresa.fontanella@wolox.com.ar (717.5ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [d929b9be-0b8a-4111-b1c7-772f3622ad50] Date: Tue, 13 Jan 2015 09:06:43 -0300
+From: mailer@wolox.com.ar
+To: teresa.fontanella@wolox.com.ar
+Message-ID: <54b50a534e7a1_c163f9f704dd0885963@ignacio-To-be-filled-by-O-E-M.mail>
+Subject: Last Created Articles
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to example.com, teresa.fontanella@wolox.com.ar</h1>
+    <h1> Last  created articles</h1>
+    
+    <p>
+
+      You have successfully signed up to example.com,
+      your username is: teresa.fontanella@wolox.com.ar.<br>
+    </p>
+    <p>
+      To login to the site, just follow this link: http://example.com/login.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::DeliveryJob] [d929b9be-0b8a-4111-b1c7-772f3622ad50] Performed ActionMailer::DeliveryJob from Inline(mailers) in 969.35ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 1085ms (Views: 19.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/last_created/10" for 127.0.0.1 at 2015-01-13 09:06:44 -0300
+Processing by ArticlesController#last_articles_bymail as HTML
+  Parameters: {"count"=>"10"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35m (1.1ms)[0m  SELECT  "articles"."id" FROM "articles"  ORDER BY "articles"."created_at" ASC LIMIT 10
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 6afc3675-0fc6-4857-9af9-66d35bdbece3) to Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [6afc3675-0fc6-4857-9af9-66d35bdbece3] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10]
+[ActiveJob] [ActionMailer::DeliveryJob] [6afc3675-0fc6-4857-9af9-66d35bdbece3]   [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" IN (1, 2, 5, 6, 7, 8, 9, 10)[0m
+[ActiveJob] [ActionMailer::DeliveryJob] [6afc3675-0fc6-4857-9af9-66d35bdbece3]   Rendered article_mailer/last_created.html.erb within layouts/mailer (0.1ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [6afc3675-0fc6-4857-9af9-66d35bdbece3] 
+ArticleMailer#last_created: processed outbound mail in 86.2ms
+[ActiveJob] [ActionMailer::DeliveryJob] [6afc3675-0fc6-4857-9af9-66d35bdbece3] 
+Sent mail to teresa.fontanella@wolox.com.ar (646.3ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [6afc3675-0fc6-4857-9af9-66d35bdbece3] Date: Tue, 13 Jan 2015 09:06:44 -0300
+From: mailer@wolox.com.ar
+To: teresa.fontanella@wolox.com.ar
+Message-ID: <54b50a5427834_c163f9f704dd0885979a@ignacio-To-be-filled-by-O-E-M.mail>
+Subject: Last Created Articles
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to example.com, teresa.fontanella@wolox.com.ar</h1>
+    <h1> Last  created articles</h1>
+    
+    <p>
+
+      You have successfully signed up to example.com,
+      your username is: teresa.fontanella@wolox.com.ar.<br>
+    </p>
+    <p>
+      To login to the site, just follow this link: http://example.com/login.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::DeliveryJob] [6afc3675-0fc6-4857-9af9-66d35bdbece3] Performed ActionMailer::DeliveryJob from Inline(mailers) in 733.67ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 745ms (Views: 0.4ms | ActiveRecord: 2.1ms)
