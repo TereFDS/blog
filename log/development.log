@@ -28871,3 +28871,280 @@ Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 12
 
 
 Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (6.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'active_admin_comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'admin_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'articles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+After fork: Configuration establish connection
+After fork: Establish connection with configuration = {"adapter"=>"postgresql", "encoding"=>"unicode", "host"=>"localhost", "password"=>"blog123", "username"=>"blog", "pool"=>10, "database"=>"blog_development", "reaping_frequency"=>10}
+After fork: Configuration establish connection
+After fork: Establish connection with configuration = {"adapter"=>"postgresql", "encoding"=>"unicode", "host"=>"localhost", "password"=>"blog123", "username"=>"blog", "pool"=>10, "database"=>"blog_development", "reaping_frequency"=>10}
+After fork: Configuration establish connection
+After fork: Establish connection with configuration = {"adapter"=>"postgresql", "encoding"=>"unicode", "host"=>"localhost", "password"=>"blog123", "username"=>"blog", "pool"=>10, "database"=>"blog_development", "reaping_frequency"=>10}
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-13 12:30:14 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (40.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered layouts/_header.html.slim (110.0ms)
+  Rendered welcome/index.html.slim within layouts/application (155.3ms)
+Completed 200 OK in 2721ms (Views: 2628.4ms | ActiveRecord: 42.8ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+Started GET "/assets/active_admin-3f251ef88fd428d2a7275cf2dd6e84d1.css?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/application-297149a79bfd865091c2d323489f3f45.css?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+Started GET "/assets/twitter/bootstrap/button-b0d2047e0a9531f022e7b3974a53f026.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse-84e55a4a7e94f05d923f3091c166ff2e.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+
+
+Started GET "/assets/twitter/bootstrap/carousel-8a517fb8e112cfb5cbce10a44a8da4ac.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+
+
+Started GET "/assets/jquery-ui/core-290c80ecb8a0cc8abe3ce4c572428231.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/jquery-ui/datepicker-46fef2bd08c7152eabb139e0fce7b289.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+
+
+Started GET "/assets/jquery-ui/widget-320c0e6ab9d0ba9853aeac7cde601034.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+Started GET "/assets/jquery-ui/button-2beb8f828ae2bf5bd866a1d49a961e89.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+
+
+Started GET "/assets/jquery-ui/mouse-ff2fbf51cc09ac75e71dfc85cd384590.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+Started GET "/assets/jquery-ui/draggable-9250c452292e1bd4057d39344ed9f6f2.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/jquery-ui/position-a246667f9ce1d2f29e825269f137af38.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/jquery-ui/resizable-4ceb16086b541dd8503b73ff1ebe634a.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/jquery-ui/dialog-c1fa41ba5b29b08fcab3fe60e7172348.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/jquery-ui/sortable-fd3842e48545c56fbd507aee96bb367d.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/jquery-ui/tabs-77d5968531a2f0c3e331c2b690c87826.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/base-edc000fef160e917424c454fd491473b.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions-f9dbc6664a33a55a3a0b025829dc3c9d.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler-633bd32bab7ec25731a67af1e817d147.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu-c5b94151dc8cae68bada5aad685f67e3.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/lib/flash-977ddfc1a734c9e50e7d0c2d3af15d14.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog-f13deb4b26f91eba24bf9d635d68c54e.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/lib/popover-cbb946556eca6cc675ed0a89ed2d1ddc.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler-f0fc7612f005a3d5a2cc8892039b9eed.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui-00c454438ea743a97c0676f6037b7cd9.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-4b28b832ea8e9b1086f94de24e19ef5d.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/application-e9bf694f203b7de646951e6680383817.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many-7de90827d56fdd164c90bf93da25f08b.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/active_admin-f1ff8d9e6e9ab29577af2078e8cc76d7.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/assets/application-d4297621c45df70294ff04ce3d89c60f.js?body=1" for 127.0.0.1 at 2015-01-13 12:30:17 -0300
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-01-13 12:30:20 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (32.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.slim within layouts/application (140.0ms)
+Completed 200 OK in 567ms (Views: 528.6ms | ActiveRecord: 34.9ms)
