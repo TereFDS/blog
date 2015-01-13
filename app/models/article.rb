@@ -9,5 +9,4 @@ class Article < ActiveRecord::Base
   def self.last_created(count)
     Article.order(:created_at).limit(count)
   end
-
 end

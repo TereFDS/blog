@@ -21,12 +21,12 @@ RSpec.describe Article, :type => :model do
     expect(Article.count).to eq 0
   end
 
-  #it 'check empty fields' do
+  # it 'check empty fields' do
   #  user = User.create!(email: 'user@name.com', password: 'password', password_confirmation: 'password')
 
   #  lindeman = Article.create!(first_name: 'Andy', last_name: 'Lindeman')
   #  chelimsky = Article.create!(first_name: 'David', last_name: 'Chelimsky')
 
   # expect(Article.ordered_by_last_name).to eq([chelimsky, lindeman])
-  #end
+  # end
 end

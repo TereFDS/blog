@@ -52,6 +52,7 @@ gem 'mandrill-rails'
 
 gem 'app_configuration'
 
+gem 'cucumber'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

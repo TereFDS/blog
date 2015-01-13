@@ -28470,3 +28470,404 @@ Content-Transfer-Encoding: 7bit
 [ActiveJob] [ActionMailer::DeliveryJob] [6afc3675-0fc6-4857-9af9-66d35bdbece3] Performed ActionMailer::DeliveryJob from Inline(mailers) in 733.67ms
   Rendered text template (0.0ms)
 Completed 200 OK in 745ms (Views: 0.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/articles/last_created/10" for 127.0.0.1 at 2015-01-13 09:22:43 -0300
+Processing by ArticlesController#last_articles_bymail as HTML
+  Parameters: {"count"=>"10"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT  "articles"."id" FROM "articles"  ORDER BY "articles"."created_at" ASC LIMIT 10[0m
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: eb5a68e5-d2a7-4000-991a-68a2e3c62c1f) to Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10], "10"
+[ActiveJob] [ActionMailer::DeliveryJob] [eb5a68e5-d2a7-4000-991a-68a2e3c62c1f] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10], "10"
+[ActiveJob] [ActionMailer::DeliveryJob] [eb5a68e5-d2a7-4000-991a-68a2e3c62c1f]   [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" IN (1, 2, 5, 6, 7, 8, 9, 10)
+[ActiveJob] [ActionMailer::DeliveryJob] [eb5a68e5-d2a7-4000-991a-68a2e3c62c1f]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [eb5a68e5-d2a7-4000-991a-68a2e3c62c1f]   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [eb5a68e5-d2a7-4000-991a-68a2e3c62c1f]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+[ActiveJob] [ActionMailer::DeliveryJob] [eb5a68e5-d2a7-4000-991a-68a2e3c62c1f]   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [eb5a68e5-d2a7-4000-991a-68a2e3c62c1f]   Rendered article_mailer/last_created.html.erb within layouts/mailer (4.5ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [eb5a68e5-d2a7-4000-991a-68a2e3c62c1f] 
+ArticleMailer#last_created: processed outbound mail in 73.8ms
+[ActiveJob] [ActionMailer::DeliveryJob] [eb5a68e5-d2a7-4000-991a-68a2e3c62c1f] 
+Sent mail to teresa.fontanella@wolox.com.ar (696.3ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [eb5a68e5-d2a7-4000-991a-68a2e3c62c1f] Date: Tue, 13 Jan 2015 09:22:43 -0300
+From: mailer@wolox.com.ar
+To: teresa.fontanella@wolox.com.ar
+Message-ID: <54b50e13c1eac_c163f9f7fbdf99459816@ignacio-To-be-filled-by-O-E-M.mail>
+Subject: Last Created Articles
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to example.com, teresa.fontanella@wolox.com.ar</h1>
+    <h1> Last 10 created articles</h1>
+
+      <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+        <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+        <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+        <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+        <p>  </p>
+      <p>  </p>
+
+
+
+  </body>
+</html>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::DeliveryJob] [eb5a68e5-d2a7-4000-991a-68a2e3c62c1f] Performed ActionMailer::DeliveryJob from Inline(mailers) in 771.43ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 805ms (Views: 3.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/articles/last_created/10" for 127.0.0.1 at 2015-01-13 09:22:44 -0300
+Processing by ArticlesController#last_articles_bymail as HTML
+  Parameters: {"count"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.6ms)[0m  SELECT  "articles"."id" FROM "articles"  ORDER BY "articles"."created_at" ASC LIMIT 10
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: bf6b8fe5-651f-41ff-a243-4242d2ff8b9a) to Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10], "10"
+[ActiveJob] [ActionMailer::DeliveryJob] [bf6b8fe5-651f-41ff-a243-4242d2ff8b9a] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10], "10"
+[ActiveJob] [ActionMailer::DeliveryJob] [bf6b8fe5-651f-41ff-a243-4242d2ff8b9a]   [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" IN (1, 2, 5, 6, 7, 8, 9, 10)[0m
+[ActiveJob] [ActionMailer::DeliveryJob] [bf6b8fe5-651f-41ff-a243-4242d2ff8b9a]   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [bf6b8fe5-651f-41ff-a243-4242d2ff8b9a]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [bf6b8fe5-651f-41ff-a243-4242d2ff8b9a]   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+[ActiveJob] [ActionMailer::DeliveryJob] [bf6b8fe5-651f-41ff-a243-4242d2ff8b9a]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [bf6b8fe5-651f-41ff-a243-4242d2ff8b9a]   Rendered article_mailer/last_created.html.erb within layouts/mailer (2.8ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [bf6b8fe5-651f-41ff-a243-4242d2ff8b9a] 
+ArticleMailer#last_created: processed outbound mail in 9.4ms
+[ActiveJob] [ActionMailer::DeliveryJob] [bf6b8fe5-651f-41ff-a243-4242d2ff8b9a] 
+Sent mail to teresa.fontanella@wolox.com.ar (776.3ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [bf6b8fe5-651f-41ff-a243-4242d2ff8b9a] Date: Tue, 13 Jan 2015 09:22:44 -0300
+From: mailer@wolox.com.ar
+To: teresa.fontanella@wolox.com.ar
+Message-ID: <54b50e148160b_c163f9f7fbdf994599d8@ignacio-To-be-filled-by-O-E-M.mail>
+Subject: Last Created Articles
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to example.com, teresa.fontanella@wolox.com.ar</h1>
+    <h1> Last 10 created articles</h1>
+
+      <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+        <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+        <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+        <p>  </p>
+      <p>  </p>
+
+      <p>  </p>
+        <p>  </p>
+      <p>  </p>
+
+
+
+  </body>
+</html>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::DeliveryJob] [bf6b8fe5-651f-41ff-a243-4242d2ff8b9a] Performed ActionMailer::DeliveryJob from Inline(mailers) in 786.96ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 800ms (Views: 0.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/articles/last_created/10" for 127.0.0.1 at 2015-01-13 09:29:54 -0300
+Processing by ArticlesController#last_articles_bymail as HTML
+  Parameters: {"count"=>"10"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT  "articles"."id" FROM "articles"  ORDER BY "articles"."created_at" ASC LIMIT 10[0m
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 2b3610e7-f65a-4e19-ae50-b9b479716420) to Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10], "10"
+[ActiveJob] [ActionMailer::DeliveryJob] [2b3610e7-f65a-4e19-ae50-b9b479716420] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10], "10"
+[ActiveJob] [ActionMailer::DeliveryJob] [2b3610e7-f65a-4e19-ae50-b9b479716420]   [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" IN (1, 2, 5, 6, 7, 8, 9, 10)
+[ActiveJob] [ActionMailer::DeliveryJob] [2b3610e7-f65a-4e19-ae50-b9b479716420]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [2b3610e7-f65a-4e19-ae50-b9b479716420]   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [2b3610e7-f65a-4e19-ae50-b9b479716420]   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+[ActiveJob] [ActionMailer::DeliveryJob] [2b3610e7-f65a-4e19-ae50-b9b479716420]   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [2b3610e7-f65a-4e19-ae50-b9b479716420]   Rendered article_mailer/last_created.html.erb within layouts/mailer (3.4ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [2b3610e7-f65a-4e19-ae50-b9b479716420] 
+ArticleMailer#last_created: processed outbound mail in 8.2ms
+[ActiveJob] [ActionMailer::DeliveryJob] [2b3610e7-f65a-4e19-ae50-b9b479716420] 
+Sent mail to teresa.fontanella@wolox.com.ar (729.2ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [2b3610e7-f65a-4e19-ae50-b9b479716420] Date: Tue, 13 Jan 2015 09:29:54 -0300
+From: mailer@wolox.com.ar
+To: teresa.fontanella@wolox.com.ar
+Message-ID: <54b50fc24ca30_c163f9f7fad85dc600c6@ignacio-To-be-filled-by-O-E-M.mail>
+Subject: Last Created Articles
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to example.com, teresa.fontanella@wolox.com.ar</h1>
+    <h1> Last 10 created articles</h1>
+
+      <p> lalla </p>
+      <p> 2015-01-06 14:28:30 UTC </p>
+
+      <p> Rails is Awesome! </p>
+      <p> 2015-01-06 14:39:52 UTC </p>
+
+      <p> lalla </p>
+      <p> 2015-01-06 16:24:06 UTC </p>
+
+      <p> Prueba </p>
+        <p> #&lt;User:0x007f3eff8681f8&gt; </p>
+      <p> 2015-01-07 16:22:35 UTC </p>
+
+      <p> lalaa </p>
+        <p> #&lt;User:0x007f3eff86d018&gt; </p>
+      <p> 2015-01-08 13:10:38 UTC </p>
+
+      <p> lalala </p>
+      <p> 2015-01-09 13:26:50 UTC </p>
+
+      <p> osooop </p>
+        <p> #&lt;User:0x007f3eff87d2d8&gt; </p>
+      <p> 2015-01-09 14:55:10 UTC </p>
+
+      <p> newaa </p>
+        <p> #&lt;User:0x007f3eff8893d0&gt; </p>
+      <p> 2015-01-07 13:05:30 UTC </p>
+
+
+
+  </body>
+</html>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::DeliveryJob] [2b3610e7-f65a-4e19-ae50-b9b479716420] Performed ActionMailer::DeliveryJob from Inline(mailers) in 738.7ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 748ms (Views: 0.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articles/last_created/10" for 127.0.0.1 at 2015-01-13 09:29:55 -0300
+Processing by ArticlesController#last_articles_bymail as HTML
+  Parameters: {"count"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT  "articles"."id" FROM "articles"  ORDER BY "articles"."created_at" ASC LIMIT 10
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 45897eb4-f465-4cec-863e-944529b8039f) to Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10], "10"
+[ActiveJob] [ActionMailer::DeliveryJob] [45897eb4-f465-4cec-863e-944529b8039f] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "ArticleMailer", "last_created", "deliver_now", "teresa.fontanella@wolox.com.ar", [1, 2, 5, 6, 7, 8, 9, 10], "10"
+[ActiveJob] [ActionMailer::DeliveryJob] [45897eb4-f465-4cec-863e-944529b8039f]   [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" IN (1, 2, 5, 6, 7, 8, 9, 10)[0m
+[ActiveJob] [ActionMailer::DeliveryJob] [45897eb4-f465-4cec-863e-944529b8039f]   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [45897eb4-f465-4cec-863e-944529b8039f]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [45897eb4-f465-4cec-863e-944529b8039f]   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+[ActiveJob] [ActionMailer::DeliveryJob] [45897eb4-f465-4cec-863e-944529b8039f]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+[ActiveJob] [ActionMailer::DeliveryJob] [45897eb4-f465-4cec-863e-944529b8039f]   Rendered article_mailer/last_created.html.erb within layouts/mailer (3.1ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [45897eb4-f465-4cec-863e-944529b8039f] 
+ArticleMailer#last_created: processed outbound mail in 88.9ms
+[ActiveJob] [ActionMailer::DeliveryJob] [45897eb4-f465-4cec-863e-944529b8039f] 
+Sent mail to teresa.fontanella@wolox.com.ar (1030.6ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [45897eb4-f465-4cec-863e-944529b8039f] Date: Tue, 13 Jan 2015 09:29:55 -0300
+From: mailer@wolox.com.ar
+To: teresa.fontanella@wolox.com.ar
+Message-ID: <54b50fc327746_c163f9f7fad85dc601db@ignacio-To-be-filled-by-O-E-M.mail>
+Subject: Last Created Articles
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to example.com, teresa.fontanella@wolox.com.ar</h1>
+    <h1> Last 10 created articles</h1>
+
+      <p> lalla </p>
+      <p> 2015-01-06 14:28:30 UTC </p>
+
+      <p> Rails is Awesome! </p>
+      <p> 2015-01-06 14:39:52 UTC </p>
+
+      <p> lalla </p>
+      <p> 2015-01-06 16:24:06 UTC </p>
+
+      <p> Prueba </p>
+        <p> #&lt;User:0x007f3eff506758&gt; </p>
+      <p> 2015-01-07 16:22:35 UTC </p>
+
+      <p> lalaa </p>
+        <p> #&lt;User:0x007f3eff51cb70&gt; </p>
+      <p> 2015-01-08 13:10:38 UTC </p>
+
+      <p> lalala </p>
+      <p> 2015-01-09 13:26:50 UTC </p>
+
+      <p> osooop </p>
+        <p> #&lt;User:0x007f3eff53e900&gt; </p>
+      <p> 2015-01-09 14:55:10 UTC </p>
+
+      <p> newaa </p>
+        <p> #&lt;User:0x007f3eff552068&gt; </p>
+      <p> 2015-01-07 13:05:30 UTC </p>
+
+
+
+  </body>
+</html>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::DeliveryJob] [45897eb4-f465-4cec-863e-944529b8039f] Performed ActionMailer::DeliveryJob from Inline(mailers) in 1121.36ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 1134ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-13 09:30:10 -0300
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered layouts/_header.html.slim (4.3ms)
+  Rendered welcome/index.html.slim within layouts/application (12.8ms)
+Completed 200 OK in 537ms (Views: 536.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-13 09:30:12 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_header.html.slim (2.3ms)
+  Rendered welcome/index.html.slim within layouts/application (5.4ms)
+Completed 200 OK in 518ms (Views: 517.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-5ee87784e48151904cad2bc4afc6720f.css?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/comments-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-09acf253440363e31b6fd0b3d4ff496f.css?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/scaffolds-9423c7fba25ee97c93bb865bfd1e85a7.css?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides-d81bcb4d4c3ee2fdf28dac7e176017b9.css?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/welcome-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition-e920d99b8661546d8bfb3a50bb3401ff.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert-d9badd591415c8d9b56188d457413a2f.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal-22e4b3cc7039c9f2e14126a988381a78.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-e4346577672a4a7ee768730d6ad0b4cd.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-fa91706a0639aaa5d768f8f3c74b25a9.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab-57128bfb849374981c34258d59437841.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-2c1ded952ba256a006c5fe5827c3345a.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover-25da2e821aee1328fdd68c902ea2ca4e.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix-b4ba482492fdd3f469614f39f066e0d0.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/twitter/bootstrap-e800ced57066492f80dd348fac5ddae0.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/articles-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/bootstrap-5f42d68eca00dcef2c30154a2fd389e7.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/comments-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300
+
+
+Started GET "/assets/welcome-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-01-13 09:30:13 -0300

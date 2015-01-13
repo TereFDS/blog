@@ -22,13 +22,12 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    if user_signed_in?
-      @article = Article.new(article_params.merge(user: current_user))
-      if @article.save
-        redirect_to @article
-      else
-        render 'new'
-      end
+    return root_path unless user_signed_in?
+    @article = Article.new(article_params.merge(user: current_user))
+    if @article.save
+      redirect_to @article
+    else
+      render 'new'
     end
   end
 
@@ -45,35 +44,31 @@ class ArticlesController < ApplicationController
   def destroy
     if user_signed_in?
       @article = Article.find(params[:id])
-      if @article.user != current_user
-        redirect_to articles_path
-      end
+      redirect_to articles_path if @article.user != current_user
     else
       redirect_to articles_path
     end
   end
 
   def last_articles_bymail
-
     # Agarrar ulimos articles
     # enviar email con esos articles
     # responder status: 200
 
-    # el pluck espara obtener un atributo en particular
+    # el pluck es para obtener un atributo en particular
     articles = Article.last_created(params[:count]).pluck(:id)
     if user_signed_in?
       # Tell the ArticleMailer to send the email
 
       # el deliver_later es para hacerlo asincronico (mandar mail generalmente se hace asincronico)
       # si queremos que sea sincronico, hay que usar .deliver!
-      ArticleMailer.last_created(current_user.email,articles).deliver_later
+      ArticleMailer.last_created(current_user.email, articles, params[:count]).deliver_later
 
       # otra forma podria ser esta: tener una coleccion de articles y aplicar map a un atributo
       # (cualquiera de las dos formas son validas)
       # ArticleMailer.last_created(current_user.email, articles.map(&:id)).deliver_later
     end
     render nothing: true
-
   end
 
   private
