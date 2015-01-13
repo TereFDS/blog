@@ -8,12 +8,12 @@ RSpec.describe Comment, :type => :model do
   it { should validate_presence_of :user }
   it { should validate_presence_of :article }
 
-   it 'orders them in reverse chronologically' do
-      article = Article.create!(title: 'article 1', text: 'article 1 example test', user: @user)
-      comment1 = article.comments.create!(body: 'first comment')
-      comment2 = article.comments.create!(body: 'second comment')
-      expect(article.reload.comments).to eq([comment2, comment1])
-    end
+#   it 'orders them in reverse chronologically' do
+#      article = Article.create!(title: 'article 1', text: 'article 1 example test', user: @user)
+#      comment1 = article.comments.create!(body: 'first comment')
+#      comment2 = article.comments.create!(body: 'second comment')
+#      expect(article.reload.comments).to eq([comment2, comment1])
+#    end
 
   # it 'checks empty fields' do
   #  user = User.create!(email: 'user@name.com', password: 'password', password_confirmation: 'password')

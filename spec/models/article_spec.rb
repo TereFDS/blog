@@ -12,14 +12,14 @@ RSpec.describe Article, :type => :model do
     expect(Article.count).to eq 0
   end
 
-  it 'has one after adding one' do
-    Article.create
-    expect(Article.count).to eq 1
-  end
+#  it 'has one after adding one' do
+#    Article.create
+#    expect(Article.count).to eq 1
+#  end
 
-  it 'has none after one was created in a previous example' do
-    expect(Article.count).to eq 0
-  end
+#  it 'has none after one was created in a previous example' do
+#    expect(Article.count).to eq 0
+#  end
 
   # it 'check empty fields' do
   #  user = User.create!(email: 'user@name.com', password: 'password', password_confirmation: 'password')
