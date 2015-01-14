@@ -173,4 +173,5 @@ en:
     anonymus: "Anonymus"
   login:
     sign_in: "Sign in"
+    sign_in_facebook: "Sign in with Facebook"
     sign_out: "Sign out"

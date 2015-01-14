@@ -36,5 +36,7 @@ module Blog
       :domain => AppConfiguration.for(:mandrill).domain, # your domain to identify your server when connecting
     }
 
+
+
   end
 end

@@ -4,5 +4,6 @@ h1 =t('hello')
   c
     p = link_to t('my_blog'), controller: 'articles'
     p = link_to t('new_article'), new_article_path
-    p = link_to t('user.sign_up'), new_user_registration_path
-    p = link_to t('user.sign_in'), new_user_session_path
+    p = link_to t('login.sign_up'), new_user_registration_path
+    p = link_to t('login.sign_in_facebook'), user_omniauth_authorize_path(:facebook)
+    p = link_to t('login.sign_in'), new_user_session_path

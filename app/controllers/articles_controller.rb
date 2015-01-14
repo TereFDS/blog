@@ -44,7 +44,9 @@ class ArticlesController < ApplicationController
   def destroy
     if user_signed_in?
       @article = Article.find(params[:id])
-      redirect_to articles_path if @article.user != current_user
+      @article.delete
+      redirect_to articles_path
+
     else
       redirect_to articles_path
     end
